@@ -1,0 +1,12 @@
+tqdm
+numpy
+scipy
+pandas
+scikit-learn
+matplotlib
+pymc3
+jupyter
+RISE
+seaborn
+countryinfo
+geopandas
