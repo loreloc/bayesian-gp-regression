@@ -69,7 +69,7 @@ def plot_test(pred_samples, mean, stddev, y_data, test_countries,
         axes.set_title(title)
 
 
-def compute_metrics(pred_samples, mean, stddev, y_data, show=True):
+def compute_mae(pred_samples, mean, stddev, y_data):
     # De-standardize the predicted targets
     unnorm_pred_samples = pred_samples * stddev + mean
 
@@ -78,11 +78,7 @@ def compute_metrics(pred_samples, mean, stddev, y_data, show=True):
 
     # Compute the metrics
     mae = mean_absolute_error(y_data, med_preds)
-    r2 = r2_score(y_data, med_preds)
-    if show:
-        print("R2 : {}".format(r2))
-        print("MAE: {}".format(mae))
-    return mae, r2
+    return mae
 
 
 def get_geodata(countries):
