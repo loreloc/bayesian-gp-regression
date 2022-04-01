@@ -143,4 +143,4 @@ def world_error_plot(world_df, pred_samples, mean, stddev, y_data,
         },
     )
     if axes is None:
-        ax.figure.set_size_inches((20, 20))
+        ax.figure.set_size_inches((20, 12))
