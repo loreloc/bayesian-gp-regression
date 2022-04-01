@@ -1,4 +1,4 @@
-# bayesian-gp-regression
+# Bayesian and Gaussian Process regression (and some examples)
 Comparison of several Regression techniques and Gaussian Process.
 
 ## Contents
