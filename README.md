@@ -2,8 +2,11 @@
 Comparison of several Regression techniques and Gaussian Process.
 
 ## Contents
+Examples taken from:
 
-### Examples of classic Bayesian models]:
+[1] MARTIN, OSVALDO. Bayesian Analysis with Python -: Implement Statistical Modeling and Probabilistic Programming Using pymc3. PACKT Publishing Limited, 2018. 
+
+### [Examples of classic Bayesian models:](1.%20bayesian-learning.ipynb)
  - Linear regression
     - Robust linear regression
  - Logistic regression
@@ -12,7 +15,7 @@ Comparison of several Regression techniques and Gaussian Process.
  - Polynomial regression (univariate and multivariate)
  - Linear splines
 
-### Examples of Gaussian Processes:
+### [Examples of Gaussian Processes](2.%20gaussian-processes.ipynb):
  - Gaussian Process Regression
  - Regression with spatial autocorrelation
  - Gaussian Process Classification
@@ -20,9 +23,10 @@ Comparison of several Regression techniques and Gaussian Process.
  -  Poisson Process (and Cox Process)
 
 ### Application on real data: Yield crop prediction
- - Bayesian models
- - Gaussian processes (potato)
- - Gaussian processes (wheat)
+ - [Preprocessing](3.%20yields-preprocess.ipynb)
+ - [Bayesian models](4.%20yields-regression.ipynb)
+ - [Gaussian processes (potato)](5a.%20yields-gp-potatoes.ipynb)
+ - [Gaussian processes (wheat)](5b.%20yields-gp-wheat.ipynb)
 
 ## Repo structure
 
@@ -35,14 +39,14 @@ Comparison of several Regression techniques and Gaussian Process.
     ├── LICENSE
     └── README.md
     
-## Installiation
+## Installation
 
 Recommended to create a venv; recommended to install pymc separatly with conda if on windows 
 [(Instructions)](https://github.com/pymc-devs/pymc/wiki/Installation-Guide-(Windows));
 
 then:
 
-    pip install  -r requirements.txt
+    pip install -r requirements.txt
     
 ## Usage
 
