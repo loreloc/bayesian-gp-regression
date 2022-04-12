@@ -127,14 +127,14 @@ def world_error_plot(world_df, pred_samples, mean, stddev, y_data,
     unnorm_pred_samples = pred_samples * stddev + mean
     # Get the median as predictions
     med_preds = np.median(unnorm_pred_samples.reshape(-1, len(y_data)), axis=0)
-    error = med_preds - y_data
+    error = (med_preds - y_data) / 10_000
     world_df.loc[world_df['in_data'], 'error'] = error
     if max_error is None:
         max_error = world_df['error'].abs().max()
     ax = world_df.plot(
         ax=axes,
         column='error', legend=True, cmap='RdYlGn', vmin=-max_error, vmax=max_error,
-        legend_kwds={'label': "Predictive error",
+        legend_kwds={'label': "Predictive error (Tons)",
                      'orientation': "horizontal"},
         missing_kwds={
             "color": "lightgrey",
